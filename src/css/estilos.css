@@ -1,0 +1,98 @@
+body {
+  font-family: "Yugioh", serif;
+  background-image: url(../img/fundo-site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cabecalho {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho .titulo {
+  color: white;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  padding: 12px;
+}
+
+.cartao.selecionado {
+  opacity: 1;
+}
+
+.lista-personagens {
+  background-color: blue;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+}
+
+.cartao .nome {
+  background-color: yellow;
+  font-size: 14px;
+  padding: 6px;
+  text-transform: uppercase;
+  background: radial-gradient(
+    circle,
+    rgba(255, 253, 193, 1) 0%,
+    rgba(255, 223, 55, 1) 76%
+  );
+  border: 2px solid #baa225;
+  border-radius: 4px;
+}
+
+.cartao .estrela {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/nivel-carta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+}
+
+.cartao .nivel-carta{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap:4px;
+
+}
+
+.cartao .imagem-carta{
+    max-width: 260px;
+    align-self: center;
+
+}
+
+.cartao .informacoes{
+    
+    border-radius:4px;
+    max-width: 300px;
+    color: black;
+    background: radial-gradient(
+    circle,
+    rgba(255, 253, 193, 1) 0%,
+    rgba(255, 223, 55, 1) 76%);
+    border: 2px solid #baa225;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 12px;
+}
+
+.cartao .informacoes .descricao
