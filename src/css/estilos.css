@@ -178,10 +178,9 @@ body {
 
   }
 
-  .btn-seta.seta-voltar{
-    transform: rotateY(180deg)
-  }
-   
+.btn-seta.btn-voltar{
+  transform: rotateY(180deg);
+}
   .btn-seta:hover{
     background-color: grey;
   }
