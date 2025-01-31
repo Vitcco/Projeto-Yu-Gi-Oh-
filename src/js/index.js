@@ -1,6 +1,3 @@
-
-console.log(document.getElementById("btn-avancar"));
-
 const btnAvancar = document.getElementById("btn-avancar");
 const btnVoltar = document.getElementById("btn-voltar");
 const cartoes = document.querySelectorAll(".cartao");
@@ -16,14 +13,12 @@ btnAvancar.addEventListener("click", function () {
 });
 
 btnVoltar.addEventListener("click", function () {
-  if (cartaoAtual === cartoes.length - 1) return;
+  if (cartaoAtual === 0) return;
 
   esconderCartaoSelecionado();
 
   cartaoAtual--;
   mostrarCartao(cartaoAtual);
-
-
 });
 
 function mostrarCartao(cartaoAtual) {
@@ -31,7 +26,7 @@ function mostrarCartao(cartaoAtual) {
 }
 
 function esconderCartaoSelecionado() {
-  const cartaoSelecionado = document.querySelector("selecionado");
+  const cartaoSelecionado = document.querySelector(".selecionado");
   cartaoSelecionado.classList.remove("selecionado");
 }
 
