@@ -40,10 +40,9 @@ cartoes[cartaoAtual].classList.add("selecionado");
     
 });
 
-
-
-
-
-
-
 //passo 4 - buscar o cartão que esta selecionado e esconder
+
+
+
+
+
